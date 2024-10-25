@@ -33,7 +33,7 @@ const Skills = () => {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
         },
         {
-          name: "SASS/SCSS",
+          name: "SASS",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
         },
         {
@@ -110,7 +110,7 @@ const Skills = () => {
       <h1 style={{ marginBottom: "40px" }}>THINGS I KNOW!!</h1>
       {skills.map((skillGroup, index) => (
         <div key={index} className="skill-category">
-          <h3 style={{ marginBottom: "10px" }}>{skillGroup.category}</h3>
+          <h3 style={{ marginBottom: "20px" }}>{skillGroup.category}</h3>
           <ul className="skill-list">
             {skillGroup.items.map((skill, idx) => (
               <li key={idx} className="skill-item">
@@ -119,6 +119,7 @@ const Skills = () => {
                   alt={`${skill.name} icon`}
                   className="skill-icon"
                 />
+                <p className="skill-name">{skill.name}</p>
               </li>
             ))}
           </ul>
@@ -132,6 +133,7 @@ const Skills = () => {
                       alt={`${skill.name} icon`}
                       className="skill-icon"
                     />
+                    <p className="skill-name">{skill.name}</p>
                   </li>
                 ))}
               </ul>

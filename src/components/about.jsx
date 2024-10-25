@@ -42,6 +42,7 @@ const About = () => {
 
   return (
     <section id="about" className="about-mf route">
+       
       <div className="container">
         <div className="row">
           <div className="col-sm-12">

@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       className="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style={{ backgroundImage: `url(${imageOverlay})` }}
+      style={{ backgroundImage: `url(${imageOverlay})`}}
     >
       <div className="overlay-mf"></div>
       <div className="container">

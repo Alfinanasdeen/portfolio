@@ -43,7 +43,7 @@ const Navbar = () => {
     >
       <div className="container">
         <a className="navbar-brand js-scroll" href="#page-top">
-          {/* Placeholder for logo */}
+         
           <span></span>
         </a>
         <button

@@ -1,8 +1,11 @@
 section {
-  padding-top: 200px;
+  padding-top: 140px;
 }
 
-
+.about-mf {
+  position: relative; /* Ensure position is relative */
+  z-index: 1; /* Set a lower z-index */
+}
 .about-avatar,
 .about-me {
   opacity: 0;
