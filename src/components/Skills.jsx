@@ -119,7 +119,7 @@ const Skills = () => {
             style={{
               marginBottom: "20px",
               color: "white",
-              fontSize: "2vw",
+              fontSize: "1.5em",
               fontWeight: 500,
             }}
           >
