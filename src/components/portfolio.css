@@ -35,8 +35,8 @@
 .col-md-4 {
   display: flex;
   width: 31.33333333%;
-  margin-bottom: 1.5rem; /* Adds vertical space between rows */
-  margin-right: 1.5rem; /* Adds horizontal space between columns */
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
 }
 .work-box:hover .icon-overlay {
   opacity: 1;
@@ -64,7 +64,6 @@
 
 .work-box:hover .icon-overlay {
   opacity: 1;
-
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -77,10 +76,12 @@
 }
 
 .work-img {
-  display: flex;
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .work-img img {
@@ -118,4 +119,52 @@
   font-size: 2.5rem;
   color: #002f6c;
   float: right;
+}
+@media (min-width: 768px) {
+  .portfolio-work .col-md-4 {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-work .col-md-4 {
+    width: 31.3333%;
+  }
+}
+@media (min-width: 992px) {
+  .icon-overlay {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .w-title {
+    font-size: 1.6rem;
+  }
+
+  .portfolio-link {
+    font-size: 1rem;
+  }
+}
+/* Ensure full width below 768px */
+@media (max-width: 767px) {
+  .portfolio-work .col-md-4 {
+    width: 100%;
+    margin: 0 0 1.5rem; /* Adds space between rows */
+  }
+}
+
+/* Two columns on tablet sizes */
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio-work .col-md-4 {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+/* Three columns on larger screens */
+@media (min-width: 992px) {
+  .portfolio-work .col-md-4 {
+    width: 31.3333%;
+  }
 }
