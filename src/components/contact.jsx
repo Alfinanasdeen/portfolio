@@ -1,6 +1,5 @@
 import "./cantact.css";
 
-
 const Contact = () => {
   return (
     <section className="paralax-mf footer-paralax bg-image sect-mt4 route">
@@ -111,14 +110,22 @@ const Contact = () => {
                     <div className="socials">
                       <ul>
                         <li>
-                          <a href="#" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=your-alfinanasdeen@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <span className="ico-circle">
                               <i className="ion-social-codepen"></i>
                             </span>
                           </a>
                         </li>
                         <li>
-                          <a href="#" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://www.linkedin.com/in/alfina-dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <span className="ico-circle">
                               <i className="ion-social-github"></i>
                             </span>
