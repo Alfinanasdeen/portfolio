@@ -1,12 +1,12 @@
 import "./cantact.css";
-import imageOverlay from "../img/earth.png";
+
 
 const Contact = () => {
   return (
-    <section
-      className="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style={{ backgroundImage: `url(${imageOverlay})`}}
-    >
+    <section className="paralax-mf footer-paralax bg-image sect-mt4 route">
+      <div id="stars" />
+      <div id="stars2" />
+      <div id="stars3" />
       <div className="overlay-mf"></div>
       <div className="container">
         <div className="row">

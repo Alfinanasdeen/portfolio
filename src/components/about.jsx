@@ -1,4 +1,4 @@
-import avatar from "../img/portfolio-avatar.png"; 
+import avatar from "../img/portfolio-avatar.png";
 import { useState, useEffect } from "react";
 import "./about.css";
 
@@ -42,18 +42,16 @@ const About = () => {
 
   return (
     <section id="about" className="about-mf route">
-       
+      <div id="stars" />
+      <div id="stars2" />
+      <div id="stars3" />
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
             <div className="box-shadow-full">
               <div className="row">
                 <div className="col-md-6 avatar-section">
-                  <img
-                    src={avatar} 
-                    alt="Avatar"
-                    className="about-avatar"
-                  />
+                  <img src={avatar} alt="Avatar" className="about-avatar" />
                 </div>
                 <div className="col-md-6">
                   <div className="about-me pt-4 pt-md-0">

@@ -148,29 +148,15 @@ const Portfolio = () => {
                 </li>
                 <li>
                   Upon logging in, users can browse through a wide range of
-                  product categories including:
-                  <ul>
-                    <li>Electronics</li>
-                    <li>Fashion</li>
-                    <li>Home & Living</li>
-                    <li>Health & Beauty</li>
-                    <li>Sports & Outdoors</li>
-                    <li>Toys & Games</li>
-                    <li>Books & Stationery</li>
-                    <li>Automotive</li>
-                    <li>Grocery</li>
-                    <li>Music Instruments</li>
-                    <li>Pet Supplies</li>
-                    <li>Gardening</li>
-                  </ul>
+                  product categories.
                 </li>
                 <li>
                   The site offers category selection through a navigation bar
                   dropdown or by scrolling through the category section.
                 </li>
                 <li>
-                  Search functionality is provided within each category to help
-                  users find specific products.
+                  Search functionality is provided to help users find specific
+                  products.
                 </li>
                 <li>
                   Each product includes filtering options based on desired
@@ -252,6 +238,9 @@ const Portfolio = () => {
 
   return (
     <section id="work" className="portfolio-mf sect-pt4 route">
+      <div id="stars" />
+      <div id="stars2" />
+      <div id="stars3" />
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
@@ -267,9 +256,9 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row portfolio-work">
           {projects.map((item, index) => (
-            <div className="col-md-4" key={index}>
+            <div className="col-md-4 portfolio" key={index}>
               <div
                 className="work-box"
                 onClick={() => handleCardClick(item.title, item.description)}
@@ -281,7 +270,7 @@ const Portfolio = () => {
                     <i className="fas fa-search"></i>
                   </div>
                 </div>
-                <div className="work-content">
+                <div className="work-content ">
                   <h2 className="w-title">{item.title}</h2>
                   <div className="w-more">
                     <p className="w-shortDescription">
@@ -289,7 +278,7 @@ const Portfolio = () => {
                     </p>
                   </div>
                   <div className="row mt-2">
-                    <div className="col-12">
+                    <div className="col-12 portfolio-link">
                       <a
                         href={item.frontendCode}
                         target="_blank"

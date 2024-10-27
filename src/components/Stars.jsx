@@ -1,5 +1,3 @@
-// Stars.jsx
-import React from "react";
 import "./stars.css";
 
 const Stars = () => {

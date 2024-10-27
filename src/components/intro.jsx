@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 
 const Intro = () => {
   return (
-    <div id="home" className="intro route bg-image background">
+    <div id="home" className="intro route ">
       <div id="stars" />
       <div id="stars2" />
       <div id="stars3" />

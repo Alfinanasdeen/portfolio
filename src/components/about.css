@@ -1,28 +1,23 @@
 section {
-  padding-top: 140px;
+  padding-top: 220px;
 }
 
 .about-mf {
-  position: relative; /* Ensure position is relative */
-  z-index: 1; /* Set a lower z-index */
+  position: relative;
+  z-index: 1;
 }
 .about-avatar,
 .about-me {
   opacity: 0;
-  transform: translateX(
-    -100vw
-  );
+  transform: translateX(-100vw);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .about-mf.visible .about-avatar,
 .about-mf.visible .about-me {
   opacity: 1;
-  transform: translateX(
-    0
-  );
+  transform: translateX(0);
 }
-
 
 .about-mf .box-shadow-full {
   padding: 4rem 2rem;
