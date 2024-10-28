@@ -26,15 +26,9 @@ const Skills = () => {
           name: "Redux",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
         },
-      ],
-      additionalItems: [
         {
           name: "Bootstrap",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-        },
-        {
-          name: "SASS",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
         },
         {
           name: "Material UI",
@@ -94,7 +88,7 @@ const Skills = () => {
       const screenPosition = window.innerHeight / 1.3;
 
       if (sectionPosition < screenPosition) {
-        skillsSection.classList.add("visible"); // Add the 'visible' class to trigger the animation
+        skillsSection.classList.add("visible"); 
       }
     };
 
@@ -137,21 +131,6 @@ const Skills = () => {
               </li>
             ))}
           </ul>
-          {skillGroup.additionalItems &&
-            skillGroup.additionalItems.length > 0 && (
-              <ul className="skill-list">
-                {skillGroup.additionalItems.map((skill, idx) => (
-                  <li key={idx} className="skill-item">
-                    <img
-                      src={skill.icon}
-                      alt={`${skill.name} icon`}
-                      className="skill-icon"
-                    />
-                    <p className="skill-name">{skill.name}</p>
-                  </li>
-                ))}
-              </ul>
-            )}
           <span className="category-spacing" />
         </div>
       ))}

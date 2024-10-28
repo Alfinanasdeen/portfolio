@@ -1,6 +1,7 @@
 body {
   color: white;
 }
+
 .skills-container {
   margin-top: 70px;
   padding: 0;
@@ -20,15 +21,18 @@ body {
   color: white !important;
 }
 
-
 .skill-list {
   list-style-type: none;
   padding: 0;
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-wrap: wrap;
+  place-items: center; /* Centers items in the grid */
   gap: 36px;
+  margin: auto;
   margin-bottom: 28px;
+  width: 100%;
+  max-width: 600px; 
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .skill-item {
@@ -37,7 +41,6 @@ body {
   align-items: center;
   margin: 10px;
 }
-
 @keyframes bounce {
   0%,
   100% {
@@ -56,12 +59,61 @@ body {
   margin: 20px 20px 20px 20px;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 850px) {
+  .skill-list {
+    gap: 24px;
+    width: 100%;
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-list {
+    gap: 16px;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 400px) {
+  .skill-list {
+    gap: 12px;
+  }
+
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
 .title {
   color: white;
   padding: 55px 0;
   font: normal bold 50px / 72px "Font Name", "Share Tech Mono", cursive;
 }
+
 .category-spacing {
-  display: block; /* Ensure it behaves like a block element */
-  height: 50px; /* Adjust as needed */
+  display: block;
+  height: 50px;
 }
