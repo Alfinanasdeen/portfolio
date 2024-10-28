@@ -27,11 +27,11 @@ body {
   display: grid;
   justify-content: center;
   place-items: center; /* Centers items in the grid */
-  gap: 36px;
+  gap: 40px;
   margin: auto;
   margin-bottom: 28px;
   width: 100%;
-  max-width: 600px; 
+  max-width: 600px;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
@@ -39,8 +39,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 150px;
   margin: 10px;
 }
+
 @keyframes bounce {
   0%,
   100% {
