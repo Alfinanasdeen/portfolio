@@ -1,4 +1,5 @@
 import "./cantact.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Contact = () => {
   return (
@@ -12,10 +13,16 @@ const Contact = () => {
           <div className="col-sm-12">
             <div className="contact-mf">
               <div id="contact" className="box-shadow-full">
+                {/* Title for the Contact Section */}
+                <div className="title-box-2 text-center">
+                  <h2 className="title-left-contactme">Contact Me</h2>
+                  <p className="subtitle">I’m eager to hear your thoughts!</p>
+                </div>
+
                 <div className="row">
                   <div className="col-md-6">
                     <div className="title-box-2">
-                      <h5 className="title-left">Send A Message</h5>
+                      <h5 className="title-left-contact">Send A Message</h5>
                     </div>
                     <div>
                       <form
@@ -97,12 +104,13 @@ const Contact = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="title-box-2 pt-4 pt-md-0">
-                      <h5 className="title-left">Get in Touch</h5>
+                      <h5 className="title-left-contact">Get in Touch</h5>
                     </div>
                     <div className="more-info">
                       <p className="lead">
                         Whether you want to get in touch, talk about a project
-                        collaboration, or just say hi, Id love to hear from you.
+                        collaboration, or just say hi, I'd love to hear from
+                        you.
                         <br />
                         Simply fill the form and send me an email.
                       </p>
@@ -116,7 +124,11 @@ const Contact = () => {
                             rel="noopener noreferrer"
                           >
                             <span className="ico-circle">
-                              <i className="ion-social-codepen"></i>
+                              <img
+                                src="https://w7.pngwing.com/pngs/817/967/png-transparent-gmail-logo-gmail-email-icon-logo-gmail-logo-angle-text-rectangle-thumbnail.png"
+                                alt="Email"
+                                className="social-icon"
+                              />
                             </span>
                           </a>
                         </li>
@@ -127,14 +139,26 @@ const Contact = () => {
                             rel="noopener noreferrer"
                           >
                             <span className="ico-circle">
-                              <i className="ion-social-github"></i>
+                              <img
+                                src="https://w7.pngwing.com/pngs/329/312/png-transparent-in-logo-linkedin-computer-icons-social-media-professional-network-service-youtube-linkedin-miscellaneous-blue-angle-thumbnail.png"
+                                alt="LinkedIn"
+                                className="social-icon"
+                              />
                             </span>
                           </a>
                         </li>
                         <li>
-                          <a href="#" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://github.com/Alfinanasdeen"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <span className="ico-circle">
-                              <i className="ion-social-linkedin"></i>
+                              <img
+                                src="https://banner2.cleanpng.com/20180711/iqy/aawpwnuou.webp"
+                                alt="GitHub"
+                                className="social-icon"
+                              />
                             </span>
                           </a>
                         </li>

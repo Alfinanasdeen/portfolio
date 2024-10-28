@@ -43,7 +43,6 @@ const Navbar = () => {
     >
       <div className="container">
         <a className="navbar-brand js-scroll" href="#page-top">
-         
           <span></span>
         </a>
         <button
@@ -67,7 +66,7 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a
-                className="nav-link js-scroll active"
+                className="nav-link js-scroll"
                 href="#home"
                 onClick={closeNavbarOnClick}
               >

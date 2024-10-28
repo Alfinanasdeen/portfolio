@@ -29,10 +29,11 @@ const Intro = () => {
             <p className="pt-3">
               <a
                 className="btn btn-primary btn js-scroll px-4"
-                href="#work"
+                href="https://drive.google.com/file/d/18hkJcH_saHTjf5tuHL2R15AD0-dusOpa/view?usp=sharing"
                 role="button"
+                target="_blank"
               >
-                View My Work
+                Resume
               </a>
             </p>
           </div>
