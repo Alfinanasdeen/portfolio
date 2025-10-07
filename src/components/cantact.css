@@ -141,34 +141,209 @@ footer .copyright {
   margin-bottom: 30px;
 }
 
+/* Form inputs responsive styling */
+.form-control {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+/* Social icons container */
+.socials ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials ul li {
+  margin: 0.5rem;
+}
+
+.ico-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* More info section */
+.more-info {
+  padding: 1rem 0;
+}
+
+.more-info .lead {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Box shadow responsive */
+.box-shadow-full {
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Media Queries for Responsiveness */
 
-@media (max-width: 576px) {
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .footer-paralax {
+    padding: 2rem 0 0 0;
+  }
+
+  #contact {
+    padding-top: 40px !important;
+  }
+
+  .contact-mf {
+    margin-top: 1rem;
+  }
+
+  .box-shadow-full {
+    padding: 1rem;
+  }
+
+  .title-left-contactme {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+  }
+
+  .title-left-contactme:before {
+    width: 60px;
+    height: 2px;
+    bottom: -8px;
+  }
+
+  .title-left-contact {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .title-left-contact:before {
+    width: 50px;
+    height: 2px;
+    bottom: -6px;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .button-big {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .more-info .lead {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  footer {
+    padding-bottom: 2rem;
+  }
+
+  .col-md-6 {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer-paralax {
+    padding: 2.5rem 0 0 0;
+  }
+
+  #contact {
+    padding-top: 50px !important;
+  }
+
+  .box-shadow-full {
+    padding: 1.5rem;
+  }
+
   .title-left-contactme {
     font-size: 2rem;
   }
 
+  .title-left-contactme:before {
+    width: 80px;
+  }
+
   .title-left-contact {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .subtitle {
     font-size: 1rem;
   }
 
-  .button {
-    font-size: 0.9rem;
-    padding: 0.3rem 0.5rem;
+  .button-big {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
   }
-}
 
-@media (min-width: 577px) {
+  .more-info .lead {
+    font-size: 0.95rem;
+  }
+
+  .col-md-6 {
+    margin-bottom: 2rem;
+  }
+
   .counter-box {
     margin-bottom: 1.8rem;
   }
 }
 
-@media (min-width: 767px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-paralax {
+    padding: 3rem 0 0 0;
+  }
+
+  #contact {
+    padding-top: 70px !important;
+  }
+
+  .box-shadow-full {
+    padding: 2.5rem;
+  }
+
+  .title-left-contactme {
+    font-size: 2.25rem;
+  }
+
+  .title-left-contact {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .button-big {
+    padding: 0.85rem 2.2rem;
+    font-size: 1.15rem;
+  }
+
   .about-mf .box-pl2,
   .contact-mf .box-pl2 {
     margin-top: 3rem;
@@ -177,12 +352,6 @@ footer .copyright {
 
   .card-blog {
     margin-bottom: 3rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .box-shadow-full {
-    padding: 3rem;
   }
 
   .navbar-b.navbar-trans .nav-item,
@@ -219,26 +388,114 @@ footer .copyright {
   }
 }
 
-@media (min-width: 992px) {
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer-paralax {
+    padding: 3.5rem 0 0 0;
+  }
+
+  .box-shadow-full {
+    padding: 2.75rem;
+  }
+
   .testimonial-box .description {
     padding: 0 8rem;
   }
 }
 
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .footer-paralax {
+    padding: 4rem 0 0 0;
+  }
+
+  .box-shadow-full {
+    padding: 3rem;
+  }
+
   .testimonial-box .description {
     padding: 0 13rem;
   }
 }
 
+/* Landscape orientation adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+  #contact {
+    padding-top: 30px !important;
+  }
+
+  .footer-paralax {
+    padding: 1.5rem 0 0 0;
+  }
+
+  .title-left-contactme {
+    font-size: 1.5rem;
+  }
+
+  .title-left-contact {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+}
+
+/* Background image fix for tablets and below */
 @media (max-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
   }
 }
 
+/* Back to top button adjustment for mobile */
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+  }
+}
+
+/* Container padding adjustments for very small screens */
+@media (max-width: 360px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .box-shadow-full {
+    padding: 0.75rem;
+  }
+
+  .title-left-contactme {
+    font-size: 1.5rem;
+  }
+
+  .social-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Ultra-wide screens (1920px and up) */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .box-shadow-full {
+    padding: 4rem;
+  }
+
+  .title-left-contactme {
+    font-size: 3rem;
+  }
+
+  .title-left-contact {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
   }
 }

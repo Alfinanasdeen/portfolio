@@ -8,10 +8,9 @@ import Intro from "./components/intro.jsx";
 import Skills from "./components/Skills.jsx";
 import Navbar from "./components/navbar.jsx";
 import About from "./components/about.jsx";
+import WorkExperience from "./components/WorkExperience.jsx";
 import Portfolio from "./components/portfolio.jsx";
 import Contact from "./components/contact.jsx";
-
-
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
       <Intro />
       <About />
       <Skills />
+      <WorkExperience />
       <Portfolio />
       <Contact />
       <Navbar />

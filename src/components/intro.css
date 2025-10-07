@@ -2,11 +2,14 @@
   height: 100vh;
   position: relative;
   color: #fff;
+  overflow: hidden;
 }
 
 .intro .intro-content {
   text-align: center;
   position: absolute;
+  width: 100%;
+  padding: 0 15px;
 }
 
 .intro .overlay-intro {
@@ -19,26 +22,141 @@
   width: 100%;
   opacity: 0.9;
 }
+
+/* Mobile First - Base styles for small screens */
 .intro .intro-helo {
   color: #fff;
   font-weight: 300;
-  font-size: 2rem;
-  letter-spacing: 4px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
 }
+
 .intro .intro-name {
   color: #fff;
   font-weight: 600;
-  font-size: 3rem;
-  letter-spacing: 6px;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .intro .intro-subtitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 6px;
-  margin-top: 20px;
+  letter-spacing: 2px;
+  margin-top: 15px;
 }
 
+.intro .text-slider {
+  display: block;
+  margin-top: 10px;
+}
+
+.intro .btn {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .intro .intro-helo {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .intro .intro-name {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+  }
+
+  .intro .intro-subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+
+  .intro .btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .intro .intro-content {
+    padding: 0 30px;
+  }
+
+  .intro .intro-helo {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+  }
+
+  .intro .intro-name {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+  }
+
+  .intro .intro-subtitle {
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    margin-top: 18px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .intro .intro-helo {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .intro .intro-name {
+    font-size: 3rem;
+    letter-spacing: 6px;
+  }
+
+  .intro .intro-subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 6px;
+    margin-top: 20px;
+  }
+
+  .intro .btn {
+    padding: 12px 28px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .intro .intro-content {
+    padding: 0 50px;
+  }
+
+  .intro .intro-name {
+    font-size: 3.5rem;
+    letter-spacing: 7px;
+  }
+
+  .intro .intro-subtitle {
+    font-size: 1.6rem;
+  }
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .intro .intro-name {
+    font-size: 4rem;
+    letter-spacing: 8px;
+  }
+
+  .intro .intro-subtitle {
+    font-size: 1.8rem;
+    letter-spacing: 7px;
+  }
+}
+
+/* Intro Single Styles - Also made responsive */
 .intro-single {
   height: 350px;
 }
@@ -49,7 +167,7 @@
 
 .intro-single .intro-title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .intro-single .breadcrumb {
@@ -67,4 +185,53 @@
 
 .intro-single .breadcrumb a {
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .intro-single .intro-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-single .intro-title {
+    font-size: 3rem;
+  }
+}
+
+/* Prevent horizontal scrolling on small screens */
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
 }

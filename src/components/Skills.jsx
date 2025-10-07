@@ -1,10 +1,22 @@
 import { useEffect } from "react";
 import "./Skills.css";
 import "./stars.css";
+import python from "../img/python.png";
+import PostgresSQL from "../img/PostgresSQL.png";
+import MongoDB from "../img/MongoDB.png";
+import Django from "../img/Django.png";
+import NodeJs from "../img/NodeJs.png";
+import VSCode from "../img/VSCode.png";
+import PgAdminLogo from "../img/PgAdminLogo.png";
+import git from "../img/git.png";
+import github from "../img/github.png";
+import postman from "../img/postman.png";
+import api from "../img/api.png";
+
 const Skills = () => {
   const skills = [
     {
-      category: "FRONTEND",
+      category: "Markup & Styling",
       items: [
         {
           name: "HTML5",
@@ -13,18 +25,6 @@ const Skills = () => {
         {
           name: "CSS3",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        },
-        {
-          name: "JavaScript",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        {
-          name: "React.js",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        },
-        {
-          name: "Redux",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
         },
         {
           name: "Bootstrap",
@@ -41,19 +41,74 @@ const Skills = () => {
       ],
     },
     {
-      category: "BACKEND",
+      category: "Programming Languages",
+      items: [
+        {
+          name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "TypeScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+          name: "Python",
+          icon: python,
+        },
+      ],
+    },
+    {
+      category: "Frameworks & Libraries",
+      items: [
+        {
+          name: "React.js",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+          name: "Redux",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+        },
+        {
+          name: "React Native",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+        },
+      ],
+    },
+    {
+      category: "Backend",
       items: [
         {
           name: "Node.js",
-          icon: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+          icon: NodeJs,
         },
         {
           name: "Express.js",
           icon: "https://img.icons8.com/?size=80&id=9Gfx4Dfxl0JK&format=png",
         },
         {
+          name: "Django",
+          icon: Django,
+        },
+        {
+          name: "RESTful APIs",
+          icon: api,
+        },
+        // {
+        //   name: "JWT",
+        //   icon: "https://img.icons8.com/?size=100&id=39858&format=png&color=FFFFFF",
+        // },
+      ],
+    },
+    {
+      category: "Database",
+      items: [
+        {
           name: "MongoDB",
-          icon: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
+          icon: MongoDB,
+        },
+        {
+          name: "PostgreSQL",
+          icon: PostgresSQL,
         },
         {
           name: "MySQL",
@@ -62,19 +117,27 @@ const Skills = () => {
       ],
     },
     {
-      category: "DEV TOOLS",
+      category: "Dev Tools",
       items: [
         {
+          name: "Git",
+          icon: git,
+        },
+        {
+          name: "GitHub ",
+          icon: github,
+        },
+        {
           name: "Postman",
-          icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+          icon: postman,
         },
         {
-          name: "npm/yarn",
-          icon: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg",
+          name: "VS Code",
+          icon: VSCode,
         },
         {
-          name: "Git & GitHub",
-          icon: "https://banner2.cleanpng.com/20180711/iqy/aawpwnuou.webp",
+          name: "pgAdmin",
+          icon: PgAdminLogo,
         },
       ],
     },
@@ -88,7 +151,7 @@ const Skills = () => {
       const screenPosition = window.innerHeight / 1.3;
 
       if (sectionPosition < screenPosition) {
-        skillsSection.classList.add("visible"); 
+        skillsSection.classList.add("visible");
       }
     };
 

@@ -245,11 +245,11 @@ const Portfolio = () => {
         <div className="row">
           <div className="col-sm-12">
             <div className="title-box text-center">
-              <h3 className="title-a">Portfolio</h3>
+              <h3 className="title-a">Projects</h3>
               <p className="subtitle-a">
-                This portfolio showcases my skills, projects, and experiences in
-                full stack development, reflecting my passion for creating
-                impactful web applications.
+                This Projects showcases my skills and experiences in full stack
+                development, reflecting my passion for creating impactful web
+                applications.
               </p>
               <div className="line-mf"></div>
             </div>

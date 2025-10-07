@@ -7,17 +7,17 @@ const About = () => {
     {
       id: "first-p-about",
       content:
-        "I am a full stack developer focused on creating efficient and user-friendly web applications. I specialize in the MERN stack, including React, Node.js, MongoDB, and Express.js.",
+        "I’m a Full Stack Developer passionate about building scalable and user-focused applications using the MERN stack. I specialize in creating responsive web and mobile experiences that combine performance, clean design, and seamless functionality.",
     },
     {
       id: "second-p-about",
       content:
-        "I have developed projects ranging from e-commerce platforms to blog websites, constantly pushing the boundaries of my skills. I thrive on tackling new challenges and learning new technologies.",
+        "In my work experience, I’ve developed a comprehensive employee management app with features like biometric and location-based check-ins, dynamic leave tracking, and secure account management — enhancing user engagement and efficiency across the platform.",
     },
     {
       id: "third-p-about",
       content:
-        "My focus is always on writing clean, maintainable code while delivering visually appealing and responsive designs that offer seamless user experiences.",
+        "Beyond my professional work, I’ve developed several personal projects — including a Zen Class Dashboard, Social Media Platform, E-Commerce Website, and Blog App — each showcasing my ability to design, build, and deploy complete full-stack solutions with a focus on performance, usability, and clean architecture.",
     },
   ]);
 

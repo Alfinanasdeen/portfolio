@@ -94,10 +94,19 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link js-scroll"
+                href="#work-experience"
+                onClick={closeNavbarOnClick}
+              >
+                Experience
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link js-scroll"
                 href="#work"
                 onClick={closeNavbarOnClick}
               >
-                Work
+                Projects
               </a>
             </li>
             <li className="nav-item">
