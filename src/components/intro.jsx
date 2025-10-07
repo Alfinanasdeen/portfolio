@@ -29,7 +29,7 @@ const Intro = () => {
             <p className="pt-3">
               <a
                 className="btn btn-primary btn js-scroll px-4"
-                href="https://drive.google.com/file/d/1iydNemG_d67-nr-_7SaMLdG27vbMuicH/view?usp=sharing"
+                href="https://drive.google.com/file/d/1h2pODcli9gO7tYgEjlcS2k7C52-mhzVT/view?usp=sharing"
                 role="button"
                 target="_blank"
               >
